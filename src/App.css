@@ -1,0 +1,87 @@
+.App{
+text-align: center;
+border: 2px solid black;
+height: 100vh;
+position: relative;
+}
+
+.App_Title{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height:42.26px;
+  letter-spacing:-4.5%;
+  text-align:center;
+  margin-top: 50px;
+  color: #333333;
+}
+
+.App_Nav{
+  /* border: 2px solid red; */
+  text-align:center;
+  margin: 70px auto 20px auto;
+  padding: 10px 0;
+  position: relative;
+  width:40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.App_Nav::after{
+  content: "";
+  position:absolute;
+  width: 150px;
+  height:4px;
+  background-color: #bdbdbd;
+  bottom:0px;
+  left: 0px;
+  max-width:45rem;
+  width: 100%;
+}
+
+.App_Nav_Link{
+  margin-top:5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height:17.07px;
+  color: #333333;
+  text-decoration: none;
+  padding: 10px 10px;
+  position:relative;
+  transition:300ms;
+}
+
+.App_Nav_Link:hover{
+  color: #fff;
+}
+
+.App_Nav_Link::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.App_Nav_Link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.App_Nav_Link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #2F80ED;
+  box-shadow:0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+
+.footer{
+  width: 100%;
+  text-align:center;
+}

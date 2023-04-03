@@ -1,0 +1,29 @@
+.task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 20%; */
+  margin: 2px auto;
+}
+
+.task-container label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  text-indent: 10px;
+  margin: 5px;
+}
+
+.delete-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.checked-item:nth-child(1){
+  text-decoration: line-through;
+}
+.not-checked-item{
+  text-decoration:none
+}
